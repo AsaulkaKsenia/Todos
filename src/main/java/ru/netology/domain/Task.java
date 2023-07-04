@@ -1,4 +1,6 @@
-package ru.netology;
+package ru.netology.domain;
+
+import java.util.Objects;
 
 public class Task {
     protected int id;
@@ -13,6 +15,7 @@ public class Task {
     }
 
     public boolean matches(String query) {
+
         return false;
     }
 
@@ -26,7 +29,9 @@ public class Task {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(id);
     }
+
 }
-}
+
